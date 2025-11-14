@@ -15,6 +15,7 @@ It implements Dijkstra's algorithm to find the most efficient route.
 ### Prerequisites
 
 * A C++ compiler (like `g++` or `clang++`)
+* The `airline_distances.txt` file in the same directory as the executable.
 
 ### Compilation
 
@@ -38,17 +39,17 @@ It implements Dijkstra's algorithm to find the most efficient route.
     ```
 
 2.  **Follow the prompts:**
-    The program will ask you to enter the start and end airports. It will then print the shortest path and the total distance.
+    The program will ask you to enter the numeric **Airport ID** for the start and end airports.
 
+    **Example Usage:**
     ```
-    Enter the start airport: AirportA
-    Enter the end airport: AirportF
-    Shortest path: AirportA -> AirportC -> AirportF
-    Total distance: 500
+    Enter the start airport ID: 12087
+    Enter the end airport ID: 3469
+    A shortest path is 12087 -> 3043 -> 3382 -> 3364 -> 3469
+    Total distance: 14293 km.
     ```
 
-## Data File
+## Data Files
 
-The `airline_distances.txt` file contains the sample airline network data. Each line represents a one-way flight and is formatted as:
-
-`[Source_Airport] [Destination_Airport] [Distance]`
+* **`airline_distances.txt` (Required):** This file contains the airline network data. Each line represents a one-way flight and is formatted as:
+    `[Source_ID] [Destination_ID] [Distance]`
