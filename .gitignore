@@ -1,0 +1,7 @@
+# Compiled executables
+shortest_path
+
+# Object files
+*.o
+
+algo-progHW3.pdf
